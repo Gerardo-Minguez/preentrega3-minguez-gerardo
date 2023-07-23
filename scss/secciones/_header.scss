@@ -1,6 +1,6 @@
 /* HEADER CON BOOTSTRAP */
 .header {
-    background-color: #a04d4d;
+    background-color: $rojomenu;
     box-shadow: 0px 5px 5px;
     border: solid 1px black;
     display: flex;
@@ -17,10 +17,10 @@
     border-image: 5px; }
   
   .bg-body-tertiary {
-    background-color: #a04d4d !important; }
+    background-color: $rojomenu !important; }
   
   .header ul {
-    background-color: #c8c1c19d;
+    background-color: $rosalinks;
     border: solid 3px black;
     list-style: none;
     box-shadow: 10px 5px 5px;

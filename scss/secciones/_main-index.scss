@@ -21,7 +21,7 @@
 
 .nosotros-index .h1-index {
   padding: 40px;
-  background-color: #a09c4d;
+  background-color: $verdefondo;
   color: aliceblue;
   font-family: 'Belanosima', sans-serif;
   text-align: center;
@@ -31,14 +31,14 @@
 
 .nosotros-index .parrafo-index {
   color: aliceblue;
-  background-color: #a09c4d;
+  background-color: $verdefondo;
   font-family: 'Josefin Sans', sans-serif;
   font-size: x-large;
   text-align: center;
 }
 
 .main {
-  background-color: #a09c4d;
+  background-color: $verdefondo;
 }
 
 @media (max-width:768px) {
