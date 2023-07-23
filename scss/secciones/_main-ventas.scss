@@ -1,4 +1,9 @@
 /* 2- ventas.html (su usó mucho GIT)*/
+//se uso gradient en el background
+
+.englobado-tarjetas{
+    
+}
 
 .englobado-tarjetas {
     display: flex;
@@ -11,7 +16,8 @@
 
 
 .main-ventas {
-    background-color: white;
+    background: rgb(160,156,77);
+background: radial-gradient(circle, rgba(160,156,77,1) 24%, rgba(233,148,148,1) 99%);
 }
 
 .card {
