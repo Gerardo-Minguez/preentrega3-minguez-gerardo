@@ -6,6 +6,14 @@
   padding: 0px;
   font-family: sans-serif; }
 
+/* Se trabajo mobile-last  - Fuentes*/
+/* se utilizó BEM en todos los H1 de los html */
+.titulo__principal {
+  font-family: 'Belanosima', sans-serif;
+  border: solid 3px #d5a9a9;
+  text-align: center;
+  text-decoration: underline black; }
+
 /* HEADER CON BOOTSTRAP */
 .header {
   background-color: #a04d4d;
@@ -68,86 +76,12 @@
 .main {
   background-color: #a09c4d; }
 
-/* Se trabajo mobile-last */
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif; }
-
-/* usar el header y footer para todos los html */
-/* 1-INDEX.HTML */
-/* HEADER CON BOOTSTRAP */
-.header {
-  background-color: #a04d4d;
-  box-shadow: 0px 5px 5px;
-  border: solid 1px black;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row; }
-
-.header img {
-  width: 400px;
-  border-image: 5px; }
-
-.bg-body-tertiary {
-  background-color: #a04d4d !important; }
-
-.header ul {
-  background-color: #c8c1c19d;
-  border: solid 3px black;
-  list-style: none;
-  box-shadow: 10px 5px 5px;
-  padding: 4px 4px;
-  margin: 4px 4px; }
-
-/* se utilizó BEM en todos los H1 de los html */
-.titulo__principal {
-  font-family: 'Belanosima', sans-serif;
-  border: solid 3px #d5a9a9;
-  text-align: center;
-  text-decoration: underline black; }
-
-/* 1- INDEX.html*/
-/* .header a {
-    color: rgb(15, 15, 15);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-} */
-/* MAIN CON GRID */
-.grilla-index {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-auto-flow: row;
-  grid-template-areas: "nosotros-index imagen-index" "nosotros-index imagen-index" "nosotros-index imagen-index";
-  width: 100vw;
-  margin: auto; }
-
-.imagen-index {
-  grid-area: imagen-index; }
-
-.nosotros-index {
-  grid-area: nosotros-index; }
-  .nosotros-index .h1-index {
-    padding: 40px;
-    background-color: #a09c4d;
-    color: aliceblue;
-    font-family: 'Belanosima', sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase; }
-  .nosotros-index .parrafo-index {
-    color: aliceblue;
-    background-color: #a09c4d;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: x-large;
-    text-align: center; }
-
-.main {
-  background-color: #a09c4d; }
+@media (max-width: 768px) {
+  /* aplico media queris a index.html - cuando sea pantallas menores a 768px quiero que desaparezca la imagen */
+  .grilla-index {
+    display: flex; }
+  .imagen-index {
+    display: none; } }
 
 /* FOOTER CON FLEX */
 .footer {
@@ -248,6 +182,21 @@
 .main-otros-servicios {
   background-color: #e4916e; }
 
+@media (max-width: 768px) {
+  /* se aplico media queris en otros-servicios.html */
+  .grilla-otros-servicios {
+    grid-template-columns: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "administracion" "tasaciones" "logo-otros-servicios" "logo-otros-servicios"; }
+  .main-otros-servicios h2 {
+    margin: 10px;
+    padding: 15px; }
+  .main-otros-servicios p {
+    margin: 11px;
+    padding: 10px; }
+  .main-otros-servicios {
+    background-color: #e4916e; } }
+
 /* 4-contacto.html - se agregó un formulario con bootstrap y se le dio estilo*/
 .main-contacto {
   display: flex;
@@ -305,26 +254,6 @@
   font-weight: bold;
   text-decoration: underline;
   background-color: #a09c4d; }
-
-@media (max-width: 768px) {
-  /* aplico media queris a index.html - cuando sea pantallas menores a 768px quiero que desaparezca la imagen */
-  .grilla-index {
-    display: flex; }
-  .imagen-index {
-    display: none; }
-  /* se aplico media queris en otros-servicios.html */
-  .grilla-otros-servicios {
-    grid-template-columns: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "administracion" "tasaciones" "logo-otros-servicios" "logo-otros-servicios"; }
-  .main-otros-servicios h2 {
-    margin: 10px;
-    padding: 15px; }
-  .main-otros-servicios p {
-    margin: 11px;
-    padding: 10px; }
-  .main-otros-servicios {
-    background-color: #e4916e; } }
 
 /* media Queris - se aplicó a todo el main de alquileres.html  */
 @media (max-width: 576px) {

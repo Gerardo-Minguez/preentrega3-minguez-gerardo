@@ -1,0 +1,20 @@
+/* 4-contacto.html - se agregó un formulario con bootstrap y se le dio estilo*/
+
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    background-color: #a09c4d;
+    box-shadow: 3px #986363;
+    height: 450px;
+}
+
+.btn-send {
+    margin: 20px;
+}
+
+.div-formulario {
+    text-align: center;
+}
