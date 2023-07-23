@@ -1,0 +1,26 @@
+/* HEADER CON BOOTSTRAP */
+.header {
+    background-color: #a04d4d;
+    box-shadow: 0px 5px 5px;
+    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+  
+  .header img {
+    width: 400px;
+    border-image: 5px; }
+  
+  .bg-body-tertiary {
+    background-color: #a04d4d !important; }
+  
+  .header ul {
+    background-color: #c8c1c19d;
+    border: solid 3px black;
+    list-style: none;
+    box-shadow: 10px 5px 5px;
+    padding: 4px 4px;
+    margin: 4px 4px; }

@@ -1,0 +1,239 @@
+
+@import "./utilidades/reset";
+
+@import './secciones/header.scss';
+@import './secciones/main-index';
+@import "./secciones/footer"
+
+
+/* Se trabajo mobile-last */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap');
+
+
+
+
+/* se utilizó BEM en todos los H1 de los html */
+
+.titulo__principal {
+    font-family: 'Belanosima', sans-serif;
+    border: solid 3px rgb(213, 169, 169);
+    text-align: center;
+    text-decoration: underline black;
+}
+
+
+
+
+
+/* 2- ventas.html (su usó mucho GIT)*/
+
+.englobado-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.main-ventas {
+    background-color: white;
+}
+
+.card {
+    background-color: #d8101088;
+    max-width: 300px;
+}
+
+.card-text {
+    background-color: #a04d4d;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e4916e;
+    color: black;
+}
+
+.main-ventas h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    text-decoration: underline black;
+}
+
+/* 3- otros-servicios.html - se usó grid*/
+
+.grilla-otros-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.6fr 0.4fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "administracion tasaciones"
+        "logo-otros-servicios logo-otros-servicios";
+    background-color: white;
+}
+
+.administracion {
+    grid-area: administracion;
+}
+
+.tasaciones {
+    grid-area: tasaciones;
+}
+
+.logo-otros-servicios {
+    grid-area: logo-otros-servicios;
+}
+
+
+.main-otros-servicios h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline black;
+    background-color: #a09c4d;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+.main-otros-servicios p {
+    margin: 22px;
+    padding: 20px;
+    background-color: #a09c4d;
+    font-family: 'Josefin Sans', sans-serif;
+    border: solid 1px black;
+    height: 250px;
+    overflow: auto;
+    align-items: center;
+}
+
+.main-otros-servicios {
+    background-color: #e4916e;
+}
+
+/* 4-contacto.html - se agregó un formulario con bootstrap y se le dio estilo*/
+
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    background-color: #a09c4d;
+    box-shadow: 3px #986363;
+    height: 450px;
+}
+
+.btn-send {
+    margin: 20px;
+}
+
+.div-formulario {
+    text-align: center;
+}
+
+/* 5-alquileres.html - solamente se usó html (y flex) y css para estilo - pseudoclase hover*/
+
+.main-alquileres {
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.main-alquileres ul {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    height: 50%;
+    width: 1350px;
+    list-style: none;
+    box-shadow: 1px 1px 1px 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.main-alquileres h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline black;
+    font-weight: bold;
+    font-style: italic;
+    border: 7px solid #c8a2a2
+}
+
+.main-alquileres img {
+    width: 280px;
+    height: 210px;
+}
+
+.main-alquileres li {
+    text-align: center;
+}
+
+/* se usó la pseudo clase hover */
+
+.main-alquileres input:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #a09c4d;
+}
+
+@media (max-width:768px) {
+
+    /* aplico media queris a index.html - cuando sea pantallas menores a 768px quiero que desaparezca la imagen */
+    .grilla-index {
+        display: flex;
+    }
+
+    .imagen-index {
+        display: none;
+    }
+
+    /* se aplico media queris en otros-servicios.html */
+    .grilla-otros-servicios {
+        grid-template-columns: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "administracion"
+            "tasaciones"
+            "logo-otros-servicios"
+            "logo-otros-servicios";
+    }
+
+    .main-otros-servicios h2 {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .main-otros-servicios p {
+        margin: 11px;
+        padding: 10px;
+    }
+
+    .main-otros-servicios {
+        background-color: #e4916e;
+    }
+
+}
+
+/* media Queris - se aplicó a todo el main de alquileres.html  */
+
+@media (max-width:576px) {
+
+    .main-alquileres ul {
+        height: 50%;
+        width: 500px;
+    }
+}
